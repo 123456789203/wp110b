@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+	Sign Up Page
+</title>
+<style>
+body{
+    background-color:#FDF5E6;
+}
+button{
+	padding: 9px 16px;
+    margin: 2px;
+    background-color:#00FF00;
+    color:white;
+    border:2px #FFFFFF solid;
+    border-radius:5px;
+    opacity:1;
+    transition:0.4s;
+    cursor: pointer;
+}
+
+.primary{
+	background-color:#008000;
+}
+.primary:hover{
+	background-color:#FFFFFF;
+    color:#000000;
+    border:2px #008000 solid;
+}
+.secondary{
+	background-color:#708090;
+}
+.secondary:hover{
+	background-color:#FFFFFF;
+    color:#000000;
+    border:2px #708090 solid;
+}
+.success{
+	background-color:RoyalBlue;
+}
+.success:hover{
+	background-color:#FFFFFF;
+    color:#000000;
+    border:2px RoyalBlue solid;
+}
+.danger{
+	background-color:Maroon;
+}
+.danger:hover{
+	background-color:DarkRed;
+    border:2px Maroon solid;
+}
+
+</style>
+</head>
+<body>
+<div>
+<h1>Sign Up</h1>
+<p><input type="text" name="name" value="" placeholder="Your name"/></p>
+<p><input type="text" name="email" value="" placeholder="Your email"/> </p>
+<p><input type="password" name="password" value="" placeholder="Your password"/></p>
+<p><input type="password" name="password1" value="" placeholder="Repeat your password"/></p>
+<p><input type="checkbox" name="agree">I agree all statements in <a href="https://www.facebook.com/groups/ccccourse">Terms of service</a></p>
+<button type="button" class="success">Submit</button>
+</div>
+</body>
+</html>
