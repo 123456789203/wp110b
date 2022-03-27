@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+     註冊page
+</title>
+<style>
+body {
+     background-color:#FFC0CB
+}
+button {
+     padding: 8px 14px;
+   margin: 3px;
+   background-color:#4169E1;
+   color:white;
+   border:3px #DCDCDC solid;
+   border-radius:1px
+}
+
+ .primary{
+         background-color:#ADFF2F;
+}
+ .primary:hover{
+         background-color:#FFF0F5;
+       color:#F0E68C;
+       border:3px #66CDAA solid;
+}
+
+ .secondary{
+         background-color:#FDF5E6;
+}
+ .secondary:hover{
+          background-color:#DB7093;
+        color:#4169E1;
+        border:5px #4682B4 solid;
+}
+ .success{
+         background-color:#C0C0C0;
+}
+ .successary:hover{
+          background-color:#FA8072;
+         color:#008080;
+         border:2px #40E0D0 solid;
+}
+ .danger{
+        background-color:#9ACD32;
+}
+ .danger:hover{
+         background-color:#F5F5F5;
+        color:#6A5ACD;
+        border:5px #2E8B57 solid;
+}
+ .warning{
+       background-color:#8B4513;
+      color:black;
+}
+ .warning:hover{
+       background-color:#F5DEB3;
+      color:black;
+     border:2px ##FFB6C1 solid;    
+}
+ .info{
+      background-color:Linen;
+     color:#FAF0E6;
+}
+ .info:hover{
+      background-color:#FF00FF;
+    color:#0F0000;
+    border:2px SkyBlue solid;
+}
+ .light{
+	background-color:#00FA9A;
+    color:#696969;
+}
+.light:hover{
+	background-color:#E0EEE0;
+    color:#414141;
+    border:2px #D0DDD0 solid;
+}
+.dark{
+	background-color:#0A2A0F;
+    color:#FFFAFA;
+}
+.dark:hover{
+	background-color:#2A4A2F;
+    color:#FFFAFA;
+    border:2px #09290E solid;
+}
+div{
+   width: 100%;
+    text-align: center;
+}
+input[type=text],input[type="password"]{
+    padding:10px 20px;
+    margin:2px;
+    width: 300px;
+    border: 2px #808080 solid;
+    border-radius: 10px; 
+    background-color: #F8F8FF;
+}
+</style>
+</head>
+<body>
+<div>
+<h1>Sign Up</h1>
+<p><input type="text" name="name" value="" placeholder="Name"/></p>
+<p><input type="text" name="email" value="" placeholder="Your email"/> </p>
+<p><input type="password" name="password" value="" placeholder="password至少8碼"/></p>
+<p><input type="password" name="password1" value="" placeholder="Repeat your password"/></p>
+<button type="button" class="success">送出</button>
+</div>
+</body>
+</html>
