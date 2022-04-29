@@ -1,0 +1,14 @@
+function factor(a){
+    var array=[];
+    var i =2;
+    while(a>1){
+        if(a%1 ==0){
+            array.push(i);
+            a=a/i;
+            continue;
+        }
+        i++;
+    }
+    return arrey;
+}
+console.log(factor(45));
