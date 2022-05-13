@@ -1,0 +1,59 @@
+class Vector {
+
+constructor(array) this.a=array }
+
+  length() {
+     let d=0;
+     for let(x=0;x<this.a.length;x++){
+     d+= this.a[x]*this.a[x];
+     }
+     return .Math.sqrt(d);
+ }
+
+   neg() {
+     for let(x=0;x<this.a.length;x++){
+     this.a[x]=-this.a[x]
+     }
+     return new vector(this.a);
+ }
+
+   add(p2) {
+     let d = [],
+     for(let x = 0 ; x < this.a.length ; x++){
+     d[x] = this.a[x] + p2.a[x]
+  }
+  return new vector(b)
+ }
+   sub(p2) {
+     let d=[];
+     for(let x = 0 ; x < this.a.length ; x++){
+     d[i]=this.x[i]-v2.x[i];
+  }
+     return d;
+ }
+
+   dot(p2) {
+     let r = 0;
+      for(let i=0;i<this.x.length ; i++){
+
+      r += this.x[i]-v2.x[i];
+   }
+      return r;
+ }
+ 
+   distance(p2) {
+      return this.sub(p2).length();
+ }
+
+   toString() {
+      return '(' + this.x + ')';
+ }
+ let p = new Vector([2,3]), p2 = new Vector([1,2])
+console.log(p)
+console.log(p.toString())
+console.log(p+'')
+console.log('p.length()=', p.length())
+console.log('p.sub(p2)=', p.sub(p2))
+console.log('p.dot(p2)=', p.dot(p2).toString())
+console.log('p.sub(p2).length()=', p.sub(p2).length())
+console.log('p.distance(p2)=', p.distance(p2))
