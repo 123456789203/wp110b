@@ -1,0 +1,26 @@
+> let text = "name: LIN-ZI-AN, age: 18, job: student;Email:s111012212@student.nqu.edu.tw
+undefined
+> let re1 = /, |[a-z]*/
+undefined
+> text.match(re1)
+[ "name" ]
+> let re2 = /[A-Z][a-z]+[A-Z][a-z]+/
+undefined
+> text.match(re2)
+[ "LIN-ZI-AN" ]
+> let re3 = /age/
+undefined
+> text.match(re3)
+[ "age" ]
+> let re4 = /\d+/g
+undefined
+> text.match(re4)
+[ "18" ]
+> let re5 = /, |.*\: /g
+undefined
+> text.match(re5)
+[ "name: LIN-ZI-AN, age: 18, job: " ]
+> let re6 = /\: *[a-z]*/g
+undefined
+> text.match(re6)
+[ ": ", ": ", ": student" ]
