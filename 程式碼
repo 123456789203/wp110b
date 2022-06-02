@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<title>多層級選單</title>
+<meta charset="utf-8">
+<style>
+ul {
+   margin: 10px
+   padding: 10px
+   width: 120px;
+}
+li {
+   border: lightblue 3px dashed;
+}
+.hide{
+    display:block;
+}
+.show{
+    display:none;
+}
+.menu {
+    font-family: '新細明體';
+}
+.menu a {
+    padding: 4px 16px;
+    display: block;
+    text-decoratio: none;
+    background-color: green;
+}
+.menu > li >a{/*第一層選單/
+    font size: 15px;
+    color:blue;
+}
+.menu > li >ul >li >a{/*第二層選單*/
+    font size: 18px;
+    color:green;
+}
+.menu > li >ul >li >ul >a{/*第三層選單*/
+    font size: 14px;
+    color:brown;
+}
+</style>
+<script>
+function changeState(){
+   var ul=this.parent.Node.getElementsByTagName(ul")[0];
+   if (ul.className == "hide"){
+       ul.className = "show";
+   }else{
+       ul.className = "hide";
+   }
+}
+window.onload = function(){
+   var menu=document.getElementById("myMenu");
+   var subMenu=menu.getElementsByTagName("ul");
+   for(i=0;i<subMenu.length;i++{
+   subMenu[i].parentElement.firstChild.onclock = changeState;
+   }
+}
+</script>
+</head>
+<body>
+<ul class="menu" id="myMenu">
+    <li><a href="#">台北景點>></a></li>
+        <ul class="hide">
+             <li><a href="#">台北101</a></li>
+             <li><a href="#">迪化街</a></li>
+             <li><a href="#">士林夜市</a></li>
+        </ul>
+    </li>
+    <li><a href="#">台南景點>></a>
+        <ul class="hide">
+            <li><a href="#">赤崁樓</a></li>
+            <li><a href="#">台南孔廟</a></li>
+            <li><a href="#">台南小吃>></a>
+                <ul class="hide">
+                    <li><a href="#">八寶冰</a></li>
+                    <li><a href="#">蚵仔煎</a></li>
+                    <li><a href="#">米糕</a></li>
+                    <li><a href="#">牛肉湯</a></li>
+                    <li><a href="#">肉燥飯</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><a href="#">澎湖景點>></a>
+        <ul  class="hide">
+            <li><a href="#">跨海大橋</a></li>
+            <li><a href="#">沙灘</a></li>
+            <li><a href="#">觀音亭</a></li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>
